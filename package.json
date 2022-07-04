@@ -1,0 +1,19 @@
+{
+  "name": "mockoon",
+  "version": "1.0.0",
+  "description": "pas mock api center",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:mock": "mockoon-cli start --data db/dev.json db/prod.json",
+    "stop:mock": "mockoon-cli stop all"
+  },
+  "keywords": [
+    "mock"
+  ],
+  "author": "Pratik Shinde",
+  "license": "ISC",
+  "dependencies": {
+    "@mockoon/cli": "^2.0.0"
+  }
+}
