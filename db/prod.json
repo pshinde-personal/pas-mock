@@ -5,7 +5,7 @@
   "endpointPrefix": "",
   "latency": 0,
   "port": 3004,
-  "hostname": "https://pas-mock.herokuapp.com",
+  "hostname": "pas-mock.herokuapp.com",
   "routes": [
     {
       "uuid": "87edc65b-c553-4d73-8a6f-7d52d9f75da9",
