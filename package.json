@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "mockoon-cli start --data db/dev.json db/prod.json",
+    "start": "mockoon-cli start --data db/dev.json db/prod.json --port 3003 3004",
     "stop": "mockoon-cli stop all"
   },
   "keywords": [
