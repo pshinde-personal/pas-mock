@@ -1,73 +1,353 @@
 {
-    "uuid": "76ab6a34-1ad8-4afa-9833-c0221a3e4397",
-    "lastMigration": 20,
-    "name": "Pas dev",
-    "endpointPrefix": "",
-    "latency": 0,
-    "port": 3003,
-    "hostname": "0.0.0.0",
-    "routes": [
-      {
-        "uuid": "982ab42a-ca9f-48a5-92fe-df847712973b",
-        "documentation": "",
-        "method": "get",
-        "endpoint": "",
-        "responses": [
-          {
-            "uuid": "5f99fcc0-eef6-4136-bcb3-273392652c41",
-            "body": "{\n  \"data\": \"HEY THERE!!\",\n  \"message\": \"Welcome to PAS MOCK API: dev env\"\n}",
-            "latency": 0,
-            "statusCode": 200,
-            "label": "",
-            "headers": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "filePath": "",
-            "sendFileAsBody": false,
-            "rules": [],
-            "rulesOperator": "OR",
-            "disableTemplating": false,
-            "fallbackTo404": false,
-            "default": true
-          }
-        ],
-        "enabled": true,
-        "randomResponse": false,
-        "sequentialResponse": false
-      }
-    ],
-    "proxyMode": false,
-    "proxyHost": "",
-    "proxyRemovePrefix": false,
-    "tlsOptions": {
-      "enabled": false,
-      "type": "CERT",
-      "pfxPath": "",
-      "certPath": "",
-      "keyPath": "",
-      "caPath": "",
-      "passphrase": ""
+  "uuid": "76ab6a34-1ad8-4afa-9833-c0221a3e4397",
+  "lastMigration": 20,
+  "name": "Pas dev",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3003,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "982ab42a-ca9f-48a5-92fe-df847712973b",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "5f99fcc0-eef6-4136-bcb3-273392652c41",
+          "body": "{\n  \"data\": \"HEY THERE!!\",\n  \"message\": \"Welcome to PAS MOCK API: dev env\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
     },
-    "cors": true,
-    "headers": [
-      {
-        "key": "Content-Type",
-        "value": "application/json"
-      }
-    ],
-    "proxyReqHeaders": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "proxyResHeaders": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ]
-  }
+    {
+      "uuid": "70d45cbd-a955-45bb-9aa1-c9a4e8de7bbc",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "token",
+      "responses": [
+        {
+          "uuid": "4ab22b07-d3c7-41f8-bef3-b0941ecced5e",
+          "body": "{\r\n    \"success\": true,\r\n    \"ttl\": \"1908503644\",\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U\"\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "8891794d-7c9a-491d-b140-c552360c717d",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "setRegion",
+      "responses": [
+        {
+          "uuid": "61cdad35-44b2-45a6-a2f1-082bee21a806",
+          "body": "{\r\n  \r\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "2b55bc1b-5045-46a4-864e-79d48d7f5348",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "aeb0fe3f-c864-4f99-8dc0-aede7225c5dc",
+          "body": "{\r\n      \"env\": \"dev\",\r\n      \"firstName\": \"Vitesh\",\r\n      \"middleName\": \"Middlename\",\r\n      \"suffixName\": \"Mr\",\r\n      \"lastName\": \"Bijaliya\",\r\n      \"defaultTimezone\": \"PST\",\r\n      \"countryCode\": \"840\",\r\n      \"languageCode\": \"en\",\r\n      \"contacts\": [\r\n         {\r\n            \"contactPreference\": \"PRIMARY\",\r\n            \"contactValue\": \"AXXXXX1@visa.com\",\r\n            \"contactType\": \"EMAIL\",\r\n            \"verificationStatus\": \"UNVERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf1\",\r\n            \"notificationInd\": true\r\n         },\r\n         {\r\n            \"contactValue\": \"001XXXXXX6124\",\r\n            \"contactType\": \"PHONE_NUMBER\",\r\n            \"verificationStatus\": \"VERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf4\",\r\n            \"notificationInd\": true\r\n         }\r\n      ]\r\n   },\r\n   \"qa\": {\r\n      \"env\": \"qa\",\r\n      \"firstName\": \"Vitesh\",\r\n      \"middleName\": \"Middlename\",\r\n      \"suffixName\": \"Mr\",\r\n      \"lastName\": \"Bijaliya\",\r\n      \"defaultTimezone\": \"PST\",\r\n      \"countryCode\": \"840\",\r\n      \"languageCode\": \"en\",\r\n      \"contacts\": [\r\n         {\r\n            \"contactPreference\": \"PRIMARY\",\r\n            \"contactValue\": \"AXXXXX1@visa.com\",\r\n            \"contactType\": \"EMAIL\",\r\n            \"verificationStatus\": \"UNVERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf1\",\r\n            \"notificationInd\": true\r\n         },\r\n         {\r\n            \"contactValue\": \"001XXXXXX6124\",\r\n            \"contactType\": \"PHONE_NUMBER\",\r\n            \"verificationStatus\": \"VERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf4\",\r\n            \"notificationInd\": true\r\n         }\r\n      ]\r\n   }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "6d36f52f-8e9e-4745-b0a5-37a63fd10090",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cards",
+      "responses": [
+        {
+          "uuid": "3a82b3e4-8e8b-4a33-90ff-ff64811054da",
+          "body": "[\r\n    {\r\n      \"cardHolderName\": \"Vitesh Bijaliya\",\r\n      \"endsWith\": \"0126\",\r\n      \"theme\": \"lightyellow\",\r\n      \"type\": \"visa\",\r\n      \"currency\": \"USD\",\r\n      \"Expiry\": \"03/2030\",\r\n      \"cardNumber\": \"374245455400126\"\r\n    },\r\n    {\r\n      \"cardHolderName\": \"Vitesh Bijaliya\",\r\n      \"endsWith\": \"8599\",\r\n      \"theme\": \"lightgray\",\r\n      \"type\": \"Mastercard\",\r\n      \"currency\": \"USD\",\r\n      \"Expiry\": \"05/2025\",\r\n      \"cardNumber\": \"6250941006528599\"\r\n    }\r\n  ]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "9e0efa37-46a8-43c7-bf07-d1cc85913197",
+      "documentation": "",
+      "method": "put",
+      "endpoint": "cards/1",
+      "responses": [
+        {
+          "uuid": "396b6676-0edc-405c-ab9f-7c64c2256c5d",
+          "body": "    {\r\n      \"cardHolderName\": \"Vitesh Bijaliya\",\r\n      \"endsWith\": \"0126\",\r\n      \"theme\": \"lightred\",\r\n      \"type\": \"visa\",\r\n      \"currency\": \"USD\",\r\n      \"Expiry\": \"03/2033\",\r\n      \"cardNumber\": \"374245455400189\"\r\n    }\r\n    ",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "3b36e9bf-00f7-4954-8b81-eb1dca7161cd",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "cards/1",
+      "responses": [
+        {
+          "uuid": "076bf7a9-8706-45ba-a6d5-08c1b05ebe41",
+          "body": "    {\r\n      \"cardHolderName\": \"Vitesh Bijaliya\",\r\n      \"endsWith\": \"0126\",\r\n      \"theme\": \"lightyellow\",\r\n      \"type\": \"visa\",\r\n      \"currency\": \"USD\",\r\n      \"Expiry\": \"03/2030\",\r\n      \"cardNumber\": \"374245455400126\"\r\n    }\r\n    ",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "f8182577-9a4b-44f7-9660-56ddd760a4c3",
+      "documentation": "",
+      "method": "delete",
+      "endpoint": "cards/1",
+      "responses": [
+        {
+          "uuid": "b3a4464a-78e2-4a34-bd36-5caf1240ee43",
+          "body": "{}\r\n    ",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "51fbb690-eea9-4f7b-93b4-bb4864cd2baf",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "coutries",
+      "responses": [
+        {
+          "uuid": "e20681ec-4ea9-4b19-8c11-a7fb163e6c5d",
+          "body": "{\r\n    \"Brazil\": {\r\n      \"cities\": [\r\n        \"Sao Paulo\",\r\n        \"Rio de Janeiro\",\r\n        \"Salvador\",\r\n        \"Fortaleza\",\r\n        \"Belo Horizonte\",\r\n        \"Brasilia\",\r\n        \"Curitiba\",\r\n        \"Manaus\",\r\n        \"Recife\",\r\n        \"Belem\"\r\n      ]\r\n    },\r\n    \"India\": {\r\n      \"cities\": [\r\n        \"Mumbai\",\r\n        \"Delhi\",\r\n        \"Bengaluru\",\r\n        \"Hyderabad\",\r\n        \"Ahmedabad\",\r\n        \"Chennai\",\r\n        \"Kolkata\",\r\n        \"Surat\",\r\n        \"Pune\",\r\n        \"Kanpur\"\r\n      ]\r\n    },\r\n    \"Malaysia\": {\r\n      \"cities\": [\r\n        \"Kota Bharu\",\r\n        \"Kuala Lumpur\",\r\n        \"Klang\",\r\n        \"Kampung Baru Subang\",\r\n        \"Johor Bahru\",\r\n        \"Subang Jaya\",\r\n        \"Ipoh\",\r\n        \"Kuching\",\r\n        \"Petaling Jaya\",\r\n        \"Shah Alam\"\r\n      ]\r\n    },\r\n    \"Mexico\": {\r\n      \"cities\": [\r\n        \"Mexico\",\r\n        \"Iztapalapa\",\r\n        \"Ecatepec de Morelos\",\r\n        \"Guadalajara\",\r\n        \"Puebla\",\r\n        \"Ciudad Juarez\",\r\n        \"Tijuana\",\r\n        \"Leon de los Aldama\",\r\n        \"Gustavo Adolfo Madero\",\r\n        \"Zapopan\"\r\n      ]\r\n    }\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}

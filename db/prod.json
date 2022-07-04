@@ -1,73 +1,143 @@
 {
-    "uuid": "76ab6a34-1ad8-4afa-9833-c0221a3e4397",
-    "lastMigration": 20,
-    "name": "Pas prod",
-    "endpointPrefix": "",
-    "latency": 0,
-    "port": 3004,
-    "hostname": "0.0.0.0",
-    "routes": [
-      {
-        "uuid": "982ab42a-ca9f-48a5-92fe-df847712973b",
-        "documentation": "",
-        "method": "get",
-        "endpoint": "",
-        "responses": [
-          {
-            "uuid": "5f99fcc0-eef6-4136-bcb3-273392652c41",
-            "body": "{\n  \"data\": \"HEY THERE!!\",\n  \"message\": \"Welcome to PAS MOCK API: prod env\"\n}",
-            "latency": 0,
-            "statusCode": 200,
-            "label": "",
-            "headers": [
-              {
-                "key": "Content-Type",
-                "value": "application/json"
-              }
-            ],
-            "filePath": "",
-            "sendFileAsBody": false,
-            "rules": [],
-            "rulesOperator": "OR",
-            "disableTemplating": false,
-            "fallbackTo404": false,
-            "default": true
-          }
-        ],
-        "enabled": true,
-        "randomResponse": false,
-        "sequentialResponse": false
-      }
-    ],
-    "proxyMode": false,
-    "proxyHost": "",
-    "proxyRemovePrefix": false,
-    "tlsOptions": {
-      "enabled": false,
-      "type": "CERT",
-      "pfxPath": "",
-      "certPath": "",
-      "keyPath": "",
-      "caPath": "",
-      "passphrase": ""
+  "uuid": "d2b59568-1b43-4b89-a048-0b8c55120665",
+  "lastMigration": 20,
+  "name": "Pas prod",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3004,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "87edc65b-c553-4d73-8a6f-7d52d9f75da9",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "",
+      "responses": [
+        {
+          "uuid": "be3df362-f158-486e-b4f6-a0cfec0f85cd",
+          "body": "{\n  \"data\": \"HEY THERE!!\",\n  \"message\": \"Welcome to PAS MOCK API: prod env\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
     },
-    "cors": true,
-    "headers": [
-      {
-        "key": "Content-Type",
-        "value": "application/json"
-      }
-    ],
-    "proxyReqHeaders": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ],
-    "proxyResHeaders": [
-      {
-        "key": "",
-        "value": ""
-      }
-    ]
-  }
+    {
+      "uuid": "081642bb-261d-4e76-980e-c7dc31378ebe",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "token",
+      "responses": [
+        {
+          "uuid": "16a77997-b1c5-4835-b42e-6a42ef77e3a6",
+          "body": "{\r\n    \"success\": true,\r\n    \"ttl\": \"503644\",\r\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U\"\r\n  }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "55f8ff1f-74fd-4ef7-9fa5-90389a1418dc",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "login",
+      "responses": [
+        {
+          "uuid": "e6c78962-1330-477a-8d8d-44983bd318d4",
+          "body": "{\r\n      \"env\": \"prod\",\r\n      \"firstName\": \"Vitesh\",\r\n      \"middleName\": \"Middlename\",\r\n      \"suffixName\": \"Mr\",\r\n      \"lastName\": \"Bijaliya\",\r\n      \"defaultTimezone\": \"PST\",\r\n      \"countryCode\": \"840\",\r\n      \"languageCode\": \"en\",\r\n      \"contacts\": [\r\n         {\r\n            \"contactPreference\": \"PRIMARY\",\r\n            \"contactValue\": \"AXXXXX1@visa.com\",\r\n            \"contactType\": \"EMAIL\",\r\n            \"verificationStatus\": \"UNVERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf1\",\r\n            \"notificationInd\": true\r\n         },\r\n         {\r\n            \"contactValue\": \"001XXXXXX6124\",\r\n            \"contactType\": \"PHONE_NUMBER\",\r\n            \"verificationStatus\": \"VERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf4\",\r\n            \"notificationInd\": true\r\n         }\r\n      ]\r\n   },\r\n   \"qa\": {\r\n      \"env\": \"qa\",\r\n      \"firstName\": \"Vitesh\",\r\n      \"middleName\": \"Middlename\",\r\n      \"suffixName\": \"Mr\",\r\n      \"lastName\": \"Bijaliya\",\r\n      \"defaultTimezone\": \"PST\",\r\n      \"countryCode\": \"840\",\r\n      \"languageCode\": \"en\",\r\n      \"contacts\": [\r\n         {\r\n            \"contactPreference\": \"PRIMARY\",\r\n            \"contactValue\": \"AXXXXX1@visa.com\",\r\n            \"contactType\": \"EMAIL\",\r\n            \"verificationStatus\": \"UNVERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf1\",\r\n            \"notificationInd\": true\r\n         },\r\n         {\r\n            \"contactValue\": \"001XXXXXX6124\",\r\n            \"contactType\": \"PHONE_NUMBER\",\r\n            \"verificationStatus\": \"VERIFIED\",\r\n            \"guid\": \"dfdfsd-dfsdf3-sdfsdf4\",\r\n            \"notificationInd\": true\r\n         }\r\n      ]\r\n   }",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "access-token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxOTA4NTAzNjQ0fQ.ODHT7vTQxQH6EgABsWXo1GthcpqArOVjFYl3aN6Ox3U"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
