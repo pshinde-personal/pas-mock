@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:mock": "mockoon-cli start --data db/dev.json db/prod.json",
-    "stop:mock": "mockoon-cli stop all"
+    "start": "mockoon-cli start --data db/dev.json db/prod.json",
+    "stop": "mockoon-cli stop all"
   },
   "keywords": [
     "mock"
